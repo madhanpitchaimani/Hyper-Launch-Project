@@ -1,7 +1,7 @@
 .store-container {
   padding: 40px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
+  background-color:rgb(238, 163, 65);
   text-align: center;
 }
 
@@ -14,7 +14,7 @@
 .summary-card {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: antiquewhite;
   padding: 30px 40px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
