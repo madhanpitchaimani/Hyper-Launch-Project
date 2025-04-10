@@ -9,9 +9,9 @@ function Home() {
              <h1 style={{ marginRight: "500px" }}>Chef Spot</h1>
              <ul>
                <li><Link to='/about'>ABOUT</Link></li>
-               <li><Link to='/events'>Events</Link></li>
+               <li><Link to='/events'>EVENTS</Link></li>
                <li>   <Link to='/join'>JOIN OUR TEAM</Link></li>
-               <li><Link to='./contact'>CONTACT</Link></li>
+             <li><Link to='/connect'>CONTACT</Link></li>
              </ul>
            </nav>
 
@@ -29,7 +29,7 @@ function Home() {
              <img src="cook.jpg" alt="" />
               <p>​"Chef On Spot" is a service that brings professional chefs directly to your <br />kitchen, offering customized culinary experiences for special events. They <br /> tailor menus to individual preferences, providing a personalized <br />dining experience in the comfort of your home.</p>
          </div>
-         <Link to="/about">About</Link>
+       
     </div>
   )
 }

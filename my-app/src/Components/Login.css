@@ -36,15 +36,17 @@ h2{
     text-align: center;
     padding: 20px;
   }
-  input{
+  input {
     display: block;
     width: 70%;
-    height: 30px;
+    height: 40px; /* consistent height */
     margin: 10px auto;
-    padding: 10px auto;
+    padding: 0 10px; /* horizontal padding for spacing inside the box */
     border: 1px solid grey;
     border-radius: 5px;
+    box-sizing: border-box; /* ensures padding doesn’t increase total width */
   }
+  
  
   button{
    background-color: blue;

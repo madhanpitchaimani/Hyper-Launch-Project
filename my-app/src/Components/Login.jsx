@@ -7,7 +7,7 @@ function Login() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:6000/users')
+    fetch('http://localhost:5000/users')
       .then(res => res.json())
       .then(data => setUsers(data));
   }, []);
@@ -45,7 +45,7 @@ function Login() {
 
         <div className='links'>
           <p>Don't have an account? <Link to="/register" style={{ color: "blue" }}>Register Now</Link></p>
-          <p><Link to="/home">Go to Home</Link></p>
+         
         </div>
       </div>
     </div>

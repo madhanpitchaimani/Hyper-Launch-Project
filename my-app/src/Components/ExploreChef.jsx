@@ -23,7 +23,7 @@ function ExploreChef() {
   });
 
   useEffect(() => {
-    fetch('http://localhost:7000/images')
+    fetch('http://localhost:5000/images')
       .then((res) => res.json())
       .then((data) => setImages(data));
   }, []);
@@ -57,6 +57,17 @@ function ExploreChef() {
   };
 
   return (
+  <div>
+     <nav>
+            <h1 style={{ marginRight: "500px" }}>Chef Spot</h1>
+            <ul>
+              <li><Link to='/about'>ABOUT</Link></li>
+              <li><Link to='/events'>EVENTS</Link></li>
+              <li><Link to='/join'>JOIN OUR TEAM</Link></li>
+              <li><Link to='/connect'>CONTACT</Link></li>
+            </ul>
+          </nav>
+  
     <div className='ingredients-image'>
       <h1>Choose Your Chef</h1>
       {images.map((img, index) => (
@@ -89,6 +100,7 @@ function ExploreChef() {
         <textarea name="specialRequest" placeholder="Special Request" onChange={handleChange} />
         <button onClick={handleSubmit}>Submit</button>
       </div>
+    </div>
     </div>
   );
 }

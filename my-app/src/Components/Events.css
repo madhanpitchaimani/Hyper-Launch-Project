@@ -1,10 +1,21 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(235, 194, 141); /* light beige background, change as needed */
+  font-family: Arial, sans-serif;
+}
+
+
+
+
 .Event-container {
   max-width: 400px;
   margin: 60px auto;
   padding: 30px 40px;
-  background: #ffffff;
+  background: antiquewhite;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(176, 81, 81, 0.1);
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -21,7 +32,7 @@
   margin-bottom: 5px;
   margin-top: 15px;
   font-weight: 500;
-  color: #34495e;
+  color: rgb(10, 9, 8);
 }
 
 .Event-container input {
@@ -44,7 +55,7 @@
   margin-top: 20px;
   width: 100%;
   padding: 12px;
-  background-color: #2980b9;
+  background-color:rgb(227, 134, 11);
   color: white;
   font-size: 16px;
   border: none;
@@ -54,5 +65,5 @@
 }
 
 .Event-container button:hover {
-  background-color: #1f6391;
+  background-color: brown;
 }

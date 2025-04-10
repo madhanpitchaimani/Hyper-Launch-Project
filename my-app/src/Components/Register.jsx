@@ -9,7 +9,7 @@ function Register() {
     const firstName = document.querySelector("input[placeholder='FirstName']").value;
     const lastName = document.querySelector("input[placeholder='LastName']").value;
     const email = document.querySelector("input[placeholder='Email']").value;
-    const password = document.querySelector("input[placeholder='password']").value;
+    const password = document.querySelector("input[placeholder='Password']").value;
 
     const newUser = { firstName, lastName, email, password };
 
@@ -23,7 +23,7 @@ function Register() {
       return;
     }
 
-    await fetch('http://localhost:6000/users', {
+    await fetch('http://localhost:5000/users', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newUser)
@@ -36,6 +36,7 @@ function Register() {
   return (
     <div className='logincontainer'>
       <div className='welcome'>
+        <img src="/logo.jpeg" alt="logo" />
         <h2>Welcome to our CHEF SPOT</h2>
         <p>Opening the door to delicious and exclusive experiences</p>
       </div>
@@ -47,7 +48,7 @@ function Register() {
         <input type="text" placeholder='FirstName' />
         <input type="text" placeholder='LastName' />
         <input type="email" placeholder='Email' />
-        <input type="password" placeholder='password' />
+        <input type="password" placeholder='Password' />
         <button type='button' onClick={handleRegister}>Submit</button>
 
         <div className='links'>

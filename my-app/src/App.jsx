@@ -11,7 +11,7 @@ import ChefDetailin from '../src/Components/ChefDetailin'
 import ChefDetailit from '../src/Components/ChefDetailit'
 import ChefDetailger from '../src/Components/ChefDetailger'
 import Join from '../src/Components/Join'
-import Contact from '../src/Components/contact'
+import Connect from '../src/Components/Connect'
 import Store from '../src/Components/Store'
 
 function App() {
@@ -31,7 +31,9 @@ function App() {
         <Route path="/chefdetailger" element={<ChefDetailger />} />
         <Route path="/store" element={<Store />} />
         <Route path="/join" element={<Join />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/connect" element={<Connect />} />
+    
+      
       </Routes>
     </Router>
   )

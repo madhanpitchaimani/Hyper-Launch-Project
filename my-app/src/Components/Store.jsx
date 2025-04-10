@@ -12,7 +12,7 @@ function Store() {
         id: Math.random().toString(36).substr(2, 4),
       };
 
-      fetch('http://localhost:7000/reservations', {
+      fetch('http://localhost:5000/reservations', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -1,37 +1,84 @@
 import React, { useState } from "react";
-import "./Join.css";
+import { Link } from 'react-router-dom'
+import "./join.css";
 
-const JoinOurTeam = () => {
+const Join = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     position: "",
     message: "",
+    resume: null,
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
 
-  const handleSubmit = (e) => {
+  const handleFileChange = (e) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      resume: e.target.files[0],
+    }));
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(`Thank you for your application, ${formData.name}!`);
-    setFormData({ name: "", email: "", position: "", message: "" });
+
+    const newApplication = {
+      name: formData.name,
+      email: formData.email,
+      position: formData.position,
+      message: formData.message,
+      resumeName: formData.resume ? formData.resume.name : "",
+    };
+
+    try {
+      const response = await fetch("http://localhost:5000/applications", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newApplication),
+      });
+
+      if (response.ok) {
+        alert(`Thank you for your application, ${formData.name}!`);
+        setFormData({
+          name: "",
+          email: "",
+          position: "",
+          message: "",
+          resume: null,
+        });
+        e.target.reset(); // Reset the file input manually
+      } else {
+        alert("Something went wrong while submitting. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting application:", error);
+      alert("Error submitting application.");
+    }
   };
 
   return (
+    <div>
+       <nav>
+                      <h1 style={{ marginRight: "500px" }}>Chef Spot</h1>
+                      <ul>
+                        <li><Link to='/about'>ABOUT</Link></li>
+                        <li><Link to='/events'>EVENTS</Link></li>
+                        <li>   <Link to='/join'>JOIN OUR TEAM</Link></li>
+                        <li><Link to='/connect'>CONTACT</Link></li>
+                      </ul>
+                    </nav>
     <div className="team-container">
-          <nav>
-        <h1 style={{ marginRight: "500px" }}>Chef Spot</h1>
-        <ul>
-          <li><Link to='/about'>ABOUT</Link></li>
-          <li><Link to='/events'>Events</Link></li>
-          <li>   <Link to='/join'>JOIN OUR TEAM</Link></li>
-          <li><Link to='./contact'>CONTACT</Link></li>
-        </ul>
-      </nav>
-      <h1>Join Our Team</h1>
+       
+      <h1 style={{color:"darkblue"}}>Join Our Team</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Full Name:
@@ -43,6 +90,7 @@ const JoinOurTeam = () => {
             required
           />
         </label>
+
         <label>
           Email:
           <input
@@ -53,6 +101,7 @@ const JoinOurTeam = () => {
             required
           />
         </label>
+
         <label>
           Position:
           <input
@@ -63,6 +112,18 @@ const JoinOurTeam = () => {
             required
           />
         </label>
+
+        <label>
+          Resume:
+          <input
+            type="file"
+            name="resume"
+            accept=".pdf,.doc,.docx"
+            onChange={handleFileChange}
+            required
+          />
+        </label>
+
         <label>
           Message:
           <textarea
@@ -72,10 +133,13 @@ const JoinOurTeam = () => {
             required
           />
         </label>
+
         <button type="submit">Submit</button>
       </form>
+    </div>
     </div>
   );
 };
 
-export default JoinOurTeam;
+export default Join;
+

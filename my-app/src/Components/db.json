@@ -13,6 +13,13 @@
       "lastName": "P",
       "email": "madhan@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "f10d",
+      "firstName": "Madhan",
+      "lastName": "P",
+      "email": "madhan@sample.com",
+      "password": "123"
     }
   ],
   "reservations": [
@@ -75,6 +82,30 @@
       "eventType": "Anniversary",
       "specialRequest": "Private Event",
       "selectedChefStyle": "Indian"
+    },
+    {
+      "id": "9919",
+      "startDate": "2025-04-12",
+      "peopleCount": "5",
+      "firstName": "Madhan",
+      "lastName": "P",
+      "email": "madhan@sample.com",
+      "phone": "8945673423",
+      "eventType": "Anniversary",
+      "specialRequest": "Party",
+      "selectedChefStyle": "German"
+    },
+    {
+      "id": "537s",
+      "startDate": "2025-04-12",
+      "peopleCount": "5",
+      "firstName": "Madhan",
+      "lastName": "P",
+      "email": "madhan@sample.com",
+      "phone": "8945673423",
+      "eventType": "Anniversary",
+      "specialRequest": "Party",
+      "selectedChefStyle": "German"
     }
   ],
   "images": [
@@ -89,6 +120,24 @@
     {
       "id": "3",
       "url": "chilli.jpg"
+    }
+  ],
+  "applications": [
+    {
+      "id": "090a",
+      "name": "Madhan P",
+      "email": "madhan@sample.com",
+      "position": "Chef",
+      "message": "This is my resume",
+      "resumeName": "Madhan Resume.docx"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "bf74",
+      "name": "Madhan P",
+      "email": "madhan@sample.com",
+      "message": "call me"
     }
   ]
 }
