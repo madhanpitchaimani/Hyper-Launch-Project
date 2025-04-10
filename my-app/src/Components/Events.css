@@ -1,0 +1,58 @@
+.Event-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px 40px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Event-container h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.Event-container label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.Event-container input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.Event-container input:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+.Event-container button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #2980b9;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Event-container button:hover {
+  background-color: #1f6391;
+}

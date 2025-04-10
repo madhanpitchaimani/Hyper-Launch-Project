@@ -1,0 +1,77 @@
+/* src/component/RegisterForm.css */
+.register-form {
+    background-color: #fff7f0;
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .register-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #9c3d26;
+  }
+  
+  .register-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .register-form form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-form label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .register-form input,
+  .register-form select,
+  .register-form textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .register-form input:focus,
+  .register-form select:focus,
+  .register-form textarea:focus {
+    outline: none;
+    border-color: #e07a5f;
+  }
+  
+  .register-form select[multiple] {
+    height: 120px;
+  }
+  
+  .register-form textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .register-form button {
+    padding: 0.8rem;
+    background-color: #e07a5f;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-form button:hover {
+    background-color: #d65a3f;
+  }
+  
