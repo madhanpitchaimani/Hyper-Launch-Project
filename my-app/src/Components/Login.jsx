@@ -46,6 +46,7 @@ function Login() {
         <div className='links'>
           <p>Don't have an account? <Link to="/register" style={{ color: "blue" }}>Register Now</Link></p>
          
+         
         </div>
       </div>
     </div>

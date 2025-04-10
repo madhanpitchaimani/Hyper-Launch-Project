@@ -20,6 +20,27 @@
       "lastName": "P",
       "email": "madhan@sample.com",
       "password": "123"
+    },
+    {
+      "id": "42eb",
+      "firstName": "Madhan",
+      "lastName": "P",
+      "email": "madhan@hyper.com",
+      "password": "4585"
+    },
+    {
+      "id": "0627",
+      "firstName": "Madhan",
+      "lastName": "P",
+      "email": "madhan@launch.com",
+      "password": "234"
+    },
+    {
+      "id": "2afe",
+      "firstName": "Madhan",
+      "lastName": "P",
+      "email": "madhan@cse.com",
+      "password": "567"
     }
   ],
   "reservations": [
@@ -106,6 +127,54 @@
       "eventType": "Anniversary",
       "specialRequest": "Party",
       "selectedChefStyle": "German"
+    },
+    {
+      "id": "dzvu",
+      "startDate": "2025-04-12",
+      "peopleCount": "10",
+      "firstName": "Madhan",
+      "lastName": "P",
+      "email": "madhan@launch.com",
+      "phone": "9025614585",
+      "eventType": "Birthday",
+      "specialRequest": "Private Event",
+      "selectedChefStyle": "Indian"
+    },
+    {
+      "id": "7wtw",
+      "startDate": "2025-04-12",
+      "peopleCount": "10",
+      "firstName": "Madhan",
+      "lastName": "P",
+      "email": "madhan@launch.com",
+      "phone": "9025614585",
+      "eventType": "Birthday",
+      "specialRequest": "Private Event",
+      "selectedChefStyle": "Indian"
+    },
+    {
+      "id": "lkzy",
+      "startDate": "2025-04-16",
+      "peopleCount": "10",
+      "firstName": "Madhan",
+      "lastName": "P",
+      "email": "madhan@cse.com",
+      "phone": "9025614585",
+      "eventType": "Birthday",
+      "specialRequest": "private event",
+      "selectedChefStyle": "Indian"
+    },
+    {
+      "id": "v9tk",
+      "startDate": "2025-04-16",
+      "peopleCount": "10",
+      "firstName": "Madhan",
+      "lastName": "P",
+      "email": "madhan@cse.com",
+      "phone": "9025614585",
+      "eventType": "Birthday",
+      "specialRequest": "private event",
+      "selectedChefStyle": "Indian"
     }
   ],
   "images": [
@@ -130,6 +199,22 @@
       "position": "Chef",
       "message": "This is my resume",
       "resumeName": "Madhan Resume.docx"
+    },
+    {
+      "id": "77dc",
+      "name": "Madhan P",
+      "email": "madhan@launch.com",
+      "position": "Chef",
+      "message": "Iam Madhan . Iam chef of indian style , I have 3 years experienced ..",
+      "resumeName": "Madhan P resume.docx"
+    },
+    {
+      "id": "bbac",
+      "name": "Madhan P",
+      "email": "madhan@cse.com",
+      "position": "Chef",
+      "message": "I have a 3 year experience",
+      "resumeName": "Madhan Resume.docx"
     }
   ],
   "contacts": [
@@ -138,6 +223,18 @@
       "name": "Madhan P",
       "email": "madhan@sample.com",
       "message": "call me"
+    },
+    {
+      "id": "e65f",
+      "name": "Madhan P",
+      "email": "madhan@launch.com",
+      "message": "I have some queries .. please contact me "
+    },
+    {
+      "id": "a98a",
+      "name": "Madhan P",
+      "email": "madhan@cse.com",
+      "message": "I have a queries about cuisine"
     }
   ]
 }

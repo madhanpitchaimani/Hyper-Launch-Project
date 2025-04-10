@@ -25,7 +25,7 @@ Let us turn your next meal into something unforgettable.
 
 </p>
       </div>
-      <Link to="/events">Events</Link>
+    
     </div>
   )
 }

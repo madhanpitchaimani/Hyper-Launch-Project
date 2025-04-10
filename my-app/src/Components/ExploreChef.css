@@ -1,7 +1,7 @@
 .ingredients-image {
   padding: 40px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f8;
+  background-color:antiquewhite;
 }
 
 .ingredients-image h1 {
@@ -60,7 +60,7 @@
 .reservation-form {
   margin: 40px auto;
   max-width: 500px;
-  background-color: #ffffff;
+  background-color: antiquewhite;
   padding: 30px 40px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
@@ -102,7 +102,7 @@
   width: 100%;
   padding: 12px;
   margin-top: 20px;
-  background-color: #27ae60;
+  background-color: rgb(227, 134, 11);
   color: white;
   font-size: 16px;
   border: none;
@@ -112,5 +112,5 @@
 }
 
 .reservation-form button:hover {
-  background-color: #1e8449;
+  background-color:brown;
 }

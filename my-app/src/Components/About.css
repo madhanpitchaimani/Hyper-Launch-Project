@@ -5,7 +5,7 @@
   justify-content: center; /* Center-align vertically */
   text-align: center;
   padding: 40px 20px;
-  background-color: #f8f9fa; /* Light background for contrast */
+  background-color: antiquewhite; /* Light background for contrast */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
